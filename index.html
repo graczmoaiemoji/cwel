@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Redirect</title>
+</head>
+<body>
+    <h1>Przekierowanie losowe</h1>
+    <p>Za chwilę zostaniesz przekierowany na jedną z dwóch stron...</p>
+
+    <script>
+        // Funkcja losująca z 50% szansą
+        function randomRedirect() {
+            const random = Math.random(); // Losowa liczba od 0 do 1
+            if (random < 0.5) {
+                window.location.href = "https://youtu.be/dQw4w9WgXcQ?si=3gw2clV-wdhJKqzT"; // Pierwsza strona
+            } else {
+                window.location.href = "https://www.example.org"; // Druga strona
+            }
+        }
+
+        // Wywołanie przekierowania po załadowaniu strony
+        window.onload = randomRedirect;
+    </script>
+</body>
+</html>
